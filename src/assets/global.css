@@ -1,0 +1,178 @@
+/* ============
+   Color
+   ============ */
+:root {
+  /* Element color */
+  --primary: #eb5440;
+  --secondary: #4a4b4c;
+  --tertiary: #e8e8e8;
+  --tertiary-2: #c3c3c3;
+  --background-1: #f6f6f6;
+  --background-2: #ffffff;
+
+  /* Text color */
+  --text-primary: #000000;
+  --text-secondary: #4a4b4c;
+  --button: #ffffff;
+  --hyperlink: #067bc2;
+}
+
+/* ============
+   Typology
+   ============ */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--hyperlink);
+  font-size: 0.75rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+label,
+input {
+  font-size: 0.75rem;
+}
+
+/* ============
+   Button UI Kit
+   ============ */
+
+.btn {
+  all: unset;
+  outline: revert;
+  height: 3rem;
+  border: none;
+  border-radius: 0.65rem;
+  width: auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  background-color: var(--primary);
+  font-weight: 700;
+  color: var(--button);
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon {
+  height: 1.25rem;
+}
+
+button.icon {
+  all: unset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  padding: 0.3rem;
+}
+
+button.icon img {
+  height: 1.25rem;
+}
+
+.mobile-only {
+  display: inline;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media only screen and (min-width: 60rem) {
+  body {
+    font-size: 1.125rem;
+  }
+  a {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+  }
+
+  label,
+  input {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    font-size: 1.125rem;
+  }
+
+  .desktop-only {
+    display: inline;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+  .btn-back {
+    font-size: 1rem;
+  }
+}
